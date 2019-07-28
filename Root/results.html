@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Smokin' BBQ - Results</title>
+      <!--
+         Smokin BBQ template page
+         Filename: results.html
+      
+         Author:  Group 3: Tan Ragland, Leo Simmons, Kathy Ntalaja, Bobbie Moore 
+         Date:  July 20, 2019   
+         HTML5 and CSS3 Final Project Group 3
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="Assets/JavaScripts/modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="Assets/Styles/styles.css">
+	  <link rel="shortcut icon" href="images/favicon.ico">
+	  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	  <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+	  <div class="container">
+         <header>
+            <h1>
+			   <a href="index.html"><img src="Assets/Images/BBQ.png" width="659" height="165" alt="Smokin' BBQ Restaurant"></a>
+			</h1>   
+         </header>
+         <nav class="sitenavigation"> 
+            <p><a href="index.html">Home</a></p><br> 
+            <p><a href="menu.pdf" target="_blank">Menu</a></p><br>
+            <p><a href="gallery.html">Photo Gallery</a></p><br>
+            <p><a href="reserve.html">Reservations</a></p><br>
+            <p><a href="https://weather.com/weather/today/l/63121:4:US">Weather</a></p><br>
+            <p><a href="https://goo.gl/maps/yGeTzFJaTREJ4vDu7" target="_blank">Map &amp; Directions</a></p>
+         </nav> 
+			<article id="contentstart">
+            <h1>Your form has been submitted</h1>
+               <h2>You entered the following data:</h2>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+         </article>
+         <footer>
+            <address>
+               6101 Delmar Ave. &bull;
+               St. Louis, MO 63121 &bull;
+               (314) 999-9999 &bull;
+               smokin'bbq@gmail.com
+            </address>
+         </footer>
+	  </div>	 
+   </body>
+</html>
