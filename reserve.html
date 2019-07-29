@@ -14,9 +14,9 @@
       <script src="Assets/JavaScripts/modernizr.custom.40753.js"></script>
       <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="Assets/Styles/styles.css">
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-      <link rel="icon" sizes="192x192" href="images/android.png">
+      <link rel="shortcut icon" href="Images/favicon.ico">
+      <link rel="apple-touch-icon" href="Images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="Images/android.png">
    </head>
    <body>
 	  <div class="container">
@@ -30,6 +30,7 @@
             <p><a href="index.html">Home</a></p><br>
             <p><a href="menu.pdf" target="_blank">Menu</a></p><br>
             <p><a href="gallery.html">Photo Gallery</a></p><br>
+			<p><a href="contactus.html">Contact Us</a></p><br>
             <p><a href="reserve.html">Reservations</a></p><br>
             <p><a href="https://weather.com/weather/today/l/63121:4:US">Weather</a></p><br>
             <p><a href="https://goo.gl/maps/yGeTzFJaTREJ4vDu7" target="_blank">Map &amp; Directions</a></p>
@@ -37,7 +38,7 @@
          <article id="contentstart">
 		    <div class="container">
                <h2>Reservations</h2>
-               <p><i>We're happy to take reservations online, by phone or by email.</i></p>             
+               <p><i>We're happy to take reservations by email, phone, or fax.</i></p>             
                <form action="results.html">
 				  <fieldset class="contactinfo">
 				     <legend>Contact Information</legend>
@@ -47,7 +48,7 @@
 					  </label>
 					  <label for="lastnameinput">
 					     Last Name 
-						 <input type="text" name="Lastname" id="lastnameinput" required="required" placeholder="last name">
+						 <input type="text" name="Lastname" id="lastnameinput" required="required" placeholder="Last Name">
 					  </label>
 					  <label for="emailinput">
 					     Email 
@@ -55,7 +56,7 @@
 					  </label>
  				     <label for="phoneinput">
 					     Telephone  
-			    	     <input type="tel" name="Phone" id="phoneinput" placeholder="(555)555-5555" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+			    	     <input type="tel" name="Phone" id="phoneinput" placeholder="(___)___-____" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
 				     </label>
 				  </fieldset>
 			   
@@ -77,46 +78,59 @@
 									<option value="12">December</option>
 								 </select>
 								 <select id="resday" name="Reservation day">
-								    <option value="01">1</option>
-								    <option value="02">2</option>
-								    <option value="03">3</option>
-								    <option value="04">4</option>
-								    <option value="05">5</option>
-								    <option value="06">6</option>
-								    <option value="07">7</option>
-								    <option value="08">8</option>
-								    <option value="09">9</option>
-								    <option value="10">10</option>
-								    <option value="11">11</option>
-								    <option value="12">12</option>
-								    <option value="13">13</option>
-								    <option value="14">14</option>
-								    <option value="15">15</option>
-								    <option value="16">16</option>
-								    <option value="17">17</option>
-								    <option value="18">18</option>
-								    <option value="19">19</option>
-								    <option value="20">20</option>
-								    <option value="21">21</option>
-								    <option value="22">22</option>
-								    <option value="23">23</option>
-								    <option value="24">24</option>
-								    <option value="25">25</option>
-								    <option value="26">26</option>
-								    <option value="27">27</option>
-								    <option value="28">28</option>
-								    <option value="29">29</option>
-								    <option value="30">30</option>
-								    <option value="31">31</option>
+								 <option value="01">1</option>
+								 <option value="02">2</option>
+								 <option value="03">3</option>
+								 <option value="04">4</option>
+								 <option value="05">5</option>
+								 <option value="06">6</option>
+								 <option value="07">7</option>
+								 <option value="08">8</option>
+								 <option value="09">9</option>
+								 <option value="10">10</option>
+								 <option value="11">11</option>
+								 <option value="12">12</option>
+								 <option value="13">13</option>
+								 <option value="14">14</option>
+								 <option value="15">15</option>
+								 <option value="16">16</option>
+								 <option value="17">17</option>
+								 <option value="18">18</option>
+								 <option value="19">19</option>
+								 <option value="20">20</option>
+								 <option value="21">21</option>
+								 <option value="22">22</option>
+								 <option value="23">23</option>
+								 <option value="24">24</option>
+								 <option value="25">25</option>
+								 <option value="26">26</option>
+								 <option value="27">27</option>
+								 <option value="28">28</option>
+								 <option value="29">29</option>
+								 <option value="30">30</option>
+								 <option value="31">31</option>
 								 </select>
 								 <select id="Resyear" name="Reservation year">
-								    <option value="2019">2019</option>
-								    <option value="2020">2020</option>
+								 <option value="2019">2019</option>
+								 <option value="2020">2020</option>
 								 </select>
 						   </div>
-				   </fieldset>
-				   <fieldset class="occasioninfo">
-					   <legend>What's the occasion for your visit</legend>
+						</fieldset>	
+				  <fieldset class="guestinfo">
+			      <legend label="guest">Number of Guest</legend>
+				  <select id=for"guest">
+				     <option value="1">1</option>
+					 <option value="2">2</option>
+					 <option value="3">3</option>
+					 <option value="4">4</option>
+					 <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 <option value="8">8+</option>
+				  </select>
+			   </fieldset>
+					 <fieldset class="occasioninfo">
+					    <legend>What's the occasion for your visit</legend>
 						   <label for="birthday">
 						      <input type="radio" name="occasion" id="birthday" value="birthday" checked>
 							  Birthday
@@ -129,15 +143,13 @@
 						      <input type="radio" name="occasion" id="SpecEvent" value="Special Event">
 							  Special Event
 						   </label>
-				   </fieldset>
-			       <fieldset class="additionalinfo">
-				       <legend>Comments, Complaints, Requests, Questions</legend>
-					   <textarea name="Feedback" id="feedback" rows="4" cols="55"></textarea>
-			       </fieldset>
-			       <fieldset class="submitbutton">
-			         <input type="submit" id="submit" value="Submit">
-				     <input type="reset" id="reset" value="Reset">
-			       </fieldset>
+					 </fieldset>
+			         
+			   
+			   <fieldset class="submitbutton">
+			      <input type="submit" id="submit" value="Submit">
+				  <input type="reset" id="submit" value="Reset">
+			   </fieldset>
 			</form>
                <p><i>Feel free to contact us with any queries about Smokin' BBQ.</i></p>
 			</div>   
