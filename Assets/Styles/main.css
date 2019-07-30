@@ -11,7 +11,7 @@
 html {
    font-size: 14px;
 }
-a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, li, nav, p, fieldset, form, input, label, legend, textarea, section, ul {
+a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, li, nav, p, .pcenter, .newspaper, fieldset, form, input, label, legend, textarea, section, ul {
    border: 0;
    padding: 0;
    margin: 0;
@@ -140,8 +140,8 @@ article {
    background-color: #c68c53;
 }
 article div {
-<!--   margin: 0 auto;
-   padding: 0 3% 1em;  -->
+   margin: 0 auto;
+   padding: 0 3% 1em;  
    background-color: ivory;
 }
 aside {
@@ -251,11 +251,23 @@ select {
 	position: absolute;
 	left: 10em;
 }
+.newspaper {
+	column-count: 2;
+	column-gap: 15px;
+	column-width: 100px;
+	height: 500px;
+	background-color: #c68c53;   /* brown */
+	column-fill: balance;
+}
 #firstnameinput, #lastnameinput, #emailinput {
 	width: 20em;
 }
 #phoneinput {
 	width: 12em;
+}
+.pcenter {
+	text-align: center;
+	color: black;
 }
 
 /* label styles */
@@ -268,22 +280,22 @@ label {
 	position: relative;
 	margin: 0.8em 0;
 }
-contactinfo input {
+.contactinfo input {
 	position: absolute;
 	left: 6em;
 }
 #submit {
 	border: 2px solid #999;
-	font-size: 1.5 em;
+	font-size: 1.5em;
 	font-weight: bold;
-	background-color: #ivory;
+	background-color: ivory;
 	border-radius: 0.5em;
 }
 #reset {
 	border: 2px solid #999;
-	font-size: 1.5 em;
+	font-size: 1.5em;
 	font-weight: bold;
-	background-color: #ivory;
+	background-color: ivory;
 	border-radius: 0.5em;
 }
 .occasioninfo label {
