@@ -11,7 +11,7 @@
 html {
    font-size: 14px;
 }
-a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, li, nav, p, .pcenter, .newspaper, fieldset, form, input, label, legend, textarea, section, ul {
+a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, li, nav, p, fieldset, form, input, label, legend, textarea, section, ul {
    border: 0;
    padding: 0;
    margin: 0;
@@ -258,6 +258,9 @@ select {
 	height: 500px;
 	background-color: #c68c53;   /* brown */
 	column-fill: balance;
+}
+.date-picker {
+	background-color:  #c68c53;
 }
 #firstnameinput, #lastnameinput, #emailinput {
 	width: 20em;
