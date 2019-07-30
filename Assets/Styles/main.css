@@ -257,8 +257,6 @@ select {
 	position: absolute;
 	left: -10000px;
 }
-.date-picker {
-	background-color: #c68c53;
 .schedule input {
 	position: absolute;
 	left: 10em;
@@ -270,6 +268,9 @@ select {
 	height: 500px;
 	background-color: #c68c53;   /* brown */
 	column-fill: balance;
+}
+.date-picker {
+	background-color:  #c68c53;
 }
 #firstnameinput, #lastnameinput, #emailinput {
 	width: 20em;
