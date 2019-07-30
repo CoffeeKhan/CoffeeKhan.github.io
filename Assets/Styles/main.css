@@ -106,7 +106,8 @@ nav.sitenavigation {
    position: relative;
    color: white;
    margin: 8px;
-/*   left-margin: 2%;   */
+   font-size: 12px;
+   margin: 0 5px;
    border: 1px solid black;
    background-color: ivory;
 }
