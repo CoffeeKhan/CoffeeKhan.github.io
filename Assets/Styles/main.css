@@ -269,9 +269,6 @@ select {
 	background-color: #c68c53;   /* brown */
 	column-fill: balance;
 }
-.date-picker {
-	background-color:  #c68c53;
-}
 #firstnameinput, #lastnameinput, #emailinput {
 	width: 20em;
 }
