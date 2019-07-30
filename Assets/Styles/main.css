@@ -257,6 +257,8 @@ select {
 	position: absolute;
 	left: -10000px;
 }
+.date-picker {
+	background-color: #c68c53;
 .schedule input {
 	position: absolute;
 	left: 10em;
